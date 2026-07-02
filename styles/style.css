@@ -19,16 +19,21 @@ header {
 header h1 {
     margin: 0;
     color: #ffffff;
+    font-size: 28px;
 }
 
 nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     padding: 10px;
     background-color: #c31141;
     text-align: center;
+
 }
 
 nav a {
-    padding: 8px 12px;
+    padding: 8px;
     color: #ffffff;
     text-decoration: none;
 }
