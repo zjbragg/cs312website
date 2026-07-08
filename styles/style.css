@@ -1,8 +1,7 @@
-/* Zachariah Bragg 7/2/2026 Module 7 */
+/* Zachariah Bragg 7/8/2026 Module 8 */
 
 body {
     margin: 0;
-    padding: 0;
     background-color: #f5f5f5;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,16 +9,15 @@ body {
 }
 
 header {
-    padding: 20px;
-    background-color: #13274f;
-    color: #c31141;
+    background: linear-gradient(to right, #13274f, #0033A0);
+    color: #ffffff;
     text-align: center;
+    padding: 30px 20px;
 }
 
 header h1 {
     margin: 0;
-    color: #ffffff;
-    font-size: 28px;
+    font-size: 2.2em;
 }
 
 nav {
@@ -30,6 +28,14 @@ nav {
     background-color: #c31141;
     text-align: center;
 
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -50,12 +56,15 @@ main {
     padding: 20px;
     background-color: #ffffff;
     border: 2px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 section {
     margin-bottom: 30px;
     padding: 15px;
     border: 1px solid #cccccc;
+    border-radius: 8px;
 }
 
 img {
@@ -67,6 +76,8 @@ img {
 .photo {
     display: block;
     border: 3px solid #13274f;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.20);
 }
 
 table {
