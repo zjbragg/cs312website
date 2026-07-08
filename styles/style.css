@@ -1,16 +1,27 @@
-/* Zachariah Bragg 7/8/2026 Module 8 */
+/* Zachariah Bragg 7/8/2026 Module 9 */
 
 body {
-    margin: 0;
-    background-color: #f5f5f5;
+    margin: 0px;
+    background-color: #F5F5F5;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
 }
 
+#wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+}
+
 header {
-    background: linear-gradient(to right, #13274f, #0033A0);
-    color: #ffffff;
+    background: linear-gradient(to right, #13274F, #0033A0);
+    color: #FFFFFF;
     text-align: center;
     padding: 30px 20px;
 }
@@ -21,50 +32,85 @@ header h1 {
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: #c31141;
+    background-color: #C31141;
     text-align: center;
-
 }
 
 nav ul {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     list-style-type: none;
-    gap: 30px;
+    gap: 0;
     margin: 0;
     padding: 0;
 }
 
+nav li {
+    margin: 0;
+}
+
 nav a {
-    padding: 8px;
-    color: #ffffff;
+    display: block;
+    padding: 14px 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #EAAA00;
+    color: #13274F;
     text-decoration: none;
 }
 
-nav a:hover,
-footer a:hover {
-    color: #eaaa00;
-    text-decoration: underline;
+nav a:focus {
+    background-color: #EAAA00;
+    color: #13274F;
+    text-decoration: none;
 }
 
 main {
-    max-width: 900px;
-    margin: 20px auto;
+    margin: 0;
     padding: 20px;
-    background-color: #ffffff;
-    border: 2px solid #dddddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: none;
 }
 
 section {
     margin-bottom: 30px;
     padding: 15px;
-    border: 1px solid #cccccc;
+    border: 1px solid #CCCCCC;
     border-radius: 8px;
+}
+
+h2 {
+    color: #13274F;
+}
+
+h3 {
+    color: #C31141;
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    background-color: #F8F8F8;
+    padding: 15px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    text-align: center;
 }
 
 img {
@@ -75,9 +121,13 @@ img {
 
 .photo {
     display: block;
-    border: 3px solid #13274f;
+    border: 3px solid #13274F;
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.20);
+}
+
+iframe {
+    max-width: 100%;
 }
 
 table {
@@ -96,11 +146,16 @@ td {
 footer {
     margin: 0px;
     padding: 15px;
-    background-color: #13274f;
-    color: #ffffff;
+    background-color: #13274F;
+    color: #FFFFFF;
     text-align: center;
 }
 
 footer a {
-    color: #ffffff;
+    color: #FFFFFF;
+}
+
+footer a:hover {
+    color: #EAAA00;
+    text-decoration: underline;
 }
